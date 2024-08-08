@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6mfmohws2ya4"]
+
+[ext_resource type="Texture2D" uid="uid://cxnptgyxkdc5r" path="res://Assets/Tiny Wonder Farm Free/objects&items/Cama.png" id="1_ekhpu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o4ojs"]
+size = Vector2(16, 30)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ekhpu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_o4ojs")

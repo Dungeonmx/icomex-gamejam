@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cudj4l4bbmf8k"]
+
+[ext_resource type="Script" path="res://Scripts/SpawnVacas.gd" id="1_mjw2i"]
+
+[node name="Main" type="Node2D" groups=["persist"]]
+script = ExtResource("1_mjw2i")
+
+[node name="Corral" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 39.0
+offset_top = 37.0
+offset_right = 182.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 15

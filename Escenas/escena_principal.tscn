@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://bavu6hed16i4i"]
+
+[ext_resource type="Script" path="res://Scripts/escena_principal.gd" id="1_kt111"]
+[ext_resource type="PackedScene" uid="uid://bbeaib1i2hjhs" path="res://Escenas/casadentro.tscn" id="3_43p0y"]
+[ext_resource type="PackedScene" uid="uid://8pa70uli0gfx" path="res://Escenas/jugador.tscn" id="3_pg3ve"]
+[ext_resource type="PackedScene" uid="uid://cbaw6ht6t4u7" path="res://Escenas/mundo.tscn" id="4_e0viq"]
+[ext_resource type="PackedScene" uid="uid://cudj4l4bbmf8k" path="res://Escenas/SpawnVacas.tscn" id="4_i6fqe"]
+
+[node name="Escena principal" type="Node2D"]
+script = ExtResource("1_kt111")
+
+[node name="_mundo" parent="." instance=ExtResource("4_e0viq")]
+position = Vector2(116, 4)
+
+[node name="Casa2" parent="." instance=ExtResource("3_43p0y")]
+position = Vector2(3188, 2084)
+
+[node name="jugador" parent="." instance=ExtResource("3_pg3ve")]
+position = Vector2(356, 302)
+
+[node name="SpawnVacas" parent="." instance=ExtResource("4_i6fqe")]
+z_index = 10
+position = Vector2(524, 1)
+height = 250
+whidth = 350
+save_area = 20

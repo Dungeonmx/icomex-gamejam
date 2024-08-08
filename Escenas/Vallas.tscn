@@ -1,0 +1,76 @@
+[gd_scene load_steps=3 format=3 uid="uid://n6ynr3ph8il2"]
+
+[ext_resource type="Texture2D" uid="uid://che6sfs1br1gg" path="res://Assets/farm objects free.png" id="1_f1sn2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hv0ho"]
+size = Vector2(111, 8)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+z_index = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(7, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(14, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2"]
+position = Vector2(7, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(28, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D3"]
+position = Vector2(7, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D3"]
+position = Vector2(14, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D3/Sprite2D2"]
+position = Vector2(7, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(56, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D4"]
+position = Vector2(7, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D4"]
+position = Vector2(14, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D4/Sprite2D2"]
+position = Vector2(7, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D/Sprite2D4"]
+position = Vector2(28, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D4/Sprite2D3"]
+position = Vector2(7, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D4/Sprite2D3"]
+position = Vector2(14, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D4/Sprite2D3/Sprite2D2"]
+position = Vector2(7, 0)
+texture = ExtResource("1_f1sn2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(52.5, 4)
+shape = SubResource("RectangleShape2D_hv0ho")

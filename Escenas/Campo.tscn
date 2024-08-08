@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=3 uid="uid://bykl3ddm5kxg1"]
+
+[ext_resource type="Texture2D" uid="uid://bxljrasiysrbs" path="res://Assets/Tiles/Grass_Middle.png" id="1_youob"]
+[ext_resource type="PackedScene" uid="uid://dnq6rxrwwedlg" path="res://Escenas/arbolito.tscn" id="2_8yfmc"]
+[ext_resource type="PackedScene" uid="uid://n6ynr3ph8il2" path="res://Escenas/Vallas.tscn" id="4_vwy6e"]
+[ext_resource type="PackedScene" uid="uid://bpvf6ag3yqp3l" path="res://Escenas/valla_vertical.tscn" id="5_hwlt8"]
+[ext_resource type="PackedScene" uid="uid://c4at2bd6xmm32" path="res://Escenas/Casa.tscn" id="6_jhn3u"]
+[ext_resource type="PackedScene" uid="uid://doms76ojnbcre" path="res://Escenas/puerta.tscn" id="7_bdudw"]
+
+[node name="_mundo" type="Node2D"]
+y_sort_enabled = true
+position = Vector2(-4, 1)
+
+[node name="GrassMiddle" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(867, 607.5)
+scale = Vector2(478, 277.312)
+texture = ExtResource("1_youob")
+
+[node name="Arbolito" parent="." instance=ExtResource("2_8yfmc")]
+position = Vector2(576, -28)
+
+[node name="Arbolito2" parent="." instance=ExtResource("2_8yfmc")]
+position = Vector2(635, -29)
+
+[node name="Arbolito3" parent="." instance=ExtResource("2_8yfmc")]
+position = Vector2(548, -28)
+
+[node name="Arbolito4" parent="." instance=ExtResource("2_8yfmc")]
+position = Vector2(478, -30)
+
+[node name="Arbolito5" parent="." instance=ExtResource("2_8yfmc")]
+position = Vector2(606, -29)
+
+[node name="Arbolito6" parent="." instance=ExtResource("2_8yfmc")]
+position = Vector2(512, -28)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("4_vwy6e")]
+z_index = 0
+position = Vector2(460, 242)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("4_vwy6e")]
+z_index = 0
+position = Vector2(572, 242)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("4_vwy6e")]
+z_index = 0
+position = Vector2(684, 242)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("4_vwy6e")]
+z_index = 0
+position = Vector2(796, 242)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("4_vwy6e")]
+z_index = 0
+position = Vector2(908, 242)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("4_vwy6e")]
+position = Vector2(468, 4)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("4_vwy6e")]
+position = Vector2(580, 4)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("4_vwy6e")]
+position = Vector2(692, 4)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("4_vwy6e")]
+position = Vector2(804, 4)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("4_vwy6e")]
+position = Vector2(909, 4)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("5_hwlt8")]
+position = Vector2(461, 249)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("5_hwlt8")]
+position = Vector2(461, 159)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("5_hwlt8")]
+position = Vector2(461, 93)
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("5_hwlt8")]
+position = Vector2(1014, 246)
+
+[node name="StaticBody2D15" parent="." instance=ExtResource("5_hwlt8")]
+position = Vector2(1014, 159)
+
+[node name="StaticBody2D16" parent="." instance=ExtResource("5_hwlt8")]
+position = Vector2(1014, 94)
+
+[node name="StaticBody2D17" parent="." instance=ExtResource("6_jhn3u")]
+position = Vector2(126, 367)
+
+[node name="Portal" parent="." instance=ExtResource("7_bdudw")]
+position = Vector2(126, 398)

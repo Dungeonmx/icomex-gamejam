@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpp3xygyfi6p7"]
+
+[ext_resource type="Script" path="res://Scripts/Angus.gd" id="1_n120x"]
+[ext_resource type="Texture2D" uid="uid://ccv06sk7rpcg0" path="res://Recursos/Angus-removebg-preview.png" id="2_yxgtv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a2fd4"]
+
+[node name="Angus" type="CharacterBody2D" groups=["angus", "persist"]]
+collision_layer = 4
+script = ExtResource("1_n120x")
+metadata/_edit_group_ = true
+
+[node name="3_Angus" type="Sprite2D" parent="."]
+position = Vector2(0, -1.42109e-14)
+scale = Vector2(0.110485, 0.110485)
+texture = ExtResource("2_yxgtv")
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(1, 10)
+shape = SubResource("RectangleShape2D_a2fd4")
+
+[node name="Movimiento" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="Stooop" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="timeout" from="Stooop" to="." method="_on_stooop_timeout"]

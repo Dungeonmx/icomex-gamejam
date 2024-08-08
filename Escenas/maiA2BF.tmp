@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://cudj4l4bbmf8k"]
+
+[ext_resource type="Script" path="res://Nodos/main.gd" id="1_h3mco"]
+[ext_resource type="Script" path="res://EscrituraTemporaria.gd" id="1_sgg0e"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1teo5"]
+
+[sub_resource type="Theme" id="Theme_tar01"]
+default_font_size = 46
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gql2a"]
+size = Vector2(1021, 537)
+
+[node name="Main" type="Node"]
+script = ExtResource("1_h3mco")
+
+[node name="Stiki" type="Label" parent="."]
+material = SubResource("CanvasItemMaterial_1teo5")
+offset_right = 1152.0
+offset_bottom = 648.0
+theme = SubResource("Theme_tar01")
+text = "Hola Mundo
+Proyecto Vacas"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_sgg0e")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Corral" type="Node" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Corral"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corral/Area2D"]
+position = Vector2(568, 319)
+shape = SubResource("RectangleShape2D_gql2a")

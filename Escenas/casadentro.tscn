@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbeaib1i2hjhs"]
+
+[ext_resource type="Texture2D" uid="uid://cb8bs226a2bak" path="res://Assets/Tiles/Path_Middle.png" id="1_32o8s"]
+[ext_resource type="PackedScene" uid="uid://c6mfmohws2ya4" path="res://Escenas/cama.tscn" id="2_bo1jg"]
+[ext_resource type="PackedScene" uid="uid://jgco8qxccyr7" path="res://Escenas/casaparacampo.tscn" id="3_lssdg"]
+
+[node name="Casa" type="Node2D"]
+
+[node name="PathMiddle" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(180, 136)
+scale = Vector2(22.2188, 16.8125)
+texture = ExtResource("1_32o8s")
+
+[node name="cama" parent="." instance=ExtResource("2_bo1jg")]
+position = Vector2(40, 61)
+
+[node name="Casa_campo" parent="." instance=ExtResource("3_lssdg")]
+position = Vector2(167, 269)

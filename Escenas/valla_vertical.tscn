@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpvf6ag3yqp3l"]
+
+[ext_resource type="Texture2D" uid="uid://dyrayyq4putfd" path="res://Assets/Tiny Wonder Farm Free/objects&items/valla vertical.png" id="1_kvh2h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ks3s6"]
+size = Vector2(8.5, 94)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.25, -49)
+shape = SubResource("RectangleShape2D_ks3s6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -13)
+texture = ExtResource("1_kvh2h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(0, -16)
+texture = ExtResource("1_kvh2h")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(0, -10)
+texture = ExtResource("1_kvh2h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D2"]
+position = Vector2(0, -22)
+texture = ExtResource("1_kvh2h")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(0, -10)
+texture = ExtResource("1_kvh2h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D3"]
+position = Vector2(0, -16)
+texture = ExtResource("1_kvh2h")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D/Sprite2D3"]
+position = Vector2(0, -39)
+texture = ExtResource("1_kvh2h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D/Sprite2D3/Sprite2D2"]
+position = Vector2(0, -22)
+texture = ExtResource("1_kvh2h")

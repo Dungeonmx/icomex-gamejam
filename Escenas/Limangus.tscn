@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://hw50pytye0ja"]
+
+[ext_resource type="Script" path="res://Scripts/Limangus.gd" id="1_k4uua"]
+[ext_resource type="Texture2D" uid="uid://de7j58l66kqhf" path="res://Recursos/Limangus-removebg-preview.png" id="2_4wky3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrf8o"]
+
+[node name="Limangus" type="CharacterBody2D" groups=["limangus", "persist"]]
+position = Vector2(0, 1)
+collision_layer = 4
+script = ExtResource("1_k4uua")
+
+[node name="1_Limangus" type="Sprite2D" parent="."]
+scale = Vector2(0.103077, 0.103077)
+texture = ExtResource("2_4wky3")
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_rrf8o")
+
+[node name="Movimiento" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="Stooop" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="timeout" from="Stooop" to="." method="_on_stooop_timeout"]
